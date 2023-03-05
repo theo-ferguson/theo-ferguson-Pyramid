@@ -28,6 +28,14 @@ public class Pyramid {
      * @return a string representation of the pyramid.
      */
     public String returnPyramid(int n){
-        return "";
+        String solution = "";
+        for (int i = 1; i <= n; i++) {
+            if (i == n) {
+                solution = solution + "*".repeat(i);
+            } else {
+                solution = solution + "*".repeat(i) + "\n";
+            }
+        }
+        return solution;
     }
 }
